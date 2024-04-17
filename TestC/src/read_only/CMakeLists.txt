@@ -1,0 +1,1 @@
+add_library(singly_linked_list singly_linked_list.cpp)
