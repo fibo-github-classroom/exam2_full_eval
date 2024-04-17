@@ -58,7 +58,8 @@ TEST(IsValidHand, Test0) {
   EXPECT_TRUE(IsValid(h));
 }
 
-TEST(IsValidHand, DISABLED_Test1) {
+// Free point in original submission due to typo in test case example.
+TEST(IsValidHand, Test1) {
   // This is valid for blackjack.
   Hand h;
   h.cards = {PlayingCard{1}, PlayingCard{2}, PlayingCard{3}, PlayingCard{4},
