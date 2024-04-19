@@ -217,7 +217,7 @@ TEST(IsValid2, Test1) {
                                    PlayingCard{3}, PlayingCard{4},
                                    PlayingCard{5}}};
   EXPECT_FALSE(IsValid(h, h_center));
-  EXPECT_TRUE(IsValid(h, h_center));
+  EXPECT_TRUE(IsValid(h2, h_center));
 }
 
 TEST(IsBetterThan2, Test0) {
@@ -232,7 +232,7 @@ TEST(IsBetterThan2, Test0) {
 
   // h_b is better than h_a
   EXPECT_FALSE(IsBetterThan(h_a, h_b, h_center));
-  EXPECT_TRUE(IsBetterThan(h_a, h_b, h_center));
+  EXPECT_TRUE(IsBetterThan(h_b, h_a, h_center));
 }
 
 TEST(IsBetterThan2, Test1) {
@@ -247,7 +247,7 @@ TEST(IsBetterThan2, Test1) {
 
   // h_b is better than h_a
   EXPECT_FALSE(IsBetterThan(h_a, h_b, h_center));
-  EXPECT_TRUE(IsBetterThan(h_a, h_b, h_center));
+  EXPECT_TRUE(IsBetterThan(h_b, h_a, h_center));
 }
 
 TEST(IsBetterThan2, Test2) {
@@ -262,7 +262,7 @@ TEST(IsBetterThan2, Test2) {
 
   // h_b is better than h_a
   EXPECT_FALSE(IsBetterThan(h_a, h_b, h_center));
-  EXPECT_TRUE(IsBetterThan(h_a, h_b, h_center));
+  EXPECT_TRUE(IsBetterThan(h_b, h_a, h_center));
 }
 
 TEST(IsBetterThan2, Test3) {
@@ -280,7 +280,7 @@ TEST(IsBetterThan2, Test3) {
 
   // neither a/b is better (tie)
   EXPECT_FALSE(IsBetterThan(h_a, h_b, h_center));
-  EXPECT_FALSE(IsBetterThan(h_a, h_b, h_center));
+  EXPECT_FALSE(IsBetterThan(h_b, h_b, h_center));
   // c > a/b
   EXPECT_TRUE(IsBetterThan(h_c, h_b, h_center));
 }
@@ -297,7 +297,7 @@ TEST(IsBetterThan2, Test4) {
 
   // h_b is better than h_a
   EXPECT_FALSE(IsBetterThan(h_a, h_b, h_center));
-  EXPECT_TRUE(IsBetterThan(h_a, h_b, h_center));
+  EXPECT_TRUE(IsBetterThan(h_b, h_a, h_center));
 }
 
 TEST(IsBetterThan2, Test5) {
@@ -312,7 +312,7 @@ TEST(IsBetterThan2, Test5) {
 
   // h_b is better than h_a
   EXPECT_FALSE(IsBetterThan(h_a, h_b, h_center));
-  EXPECT_TRUE(IsBetterThan(h_a, h_b, h_center));
+  EXPECT_TRUE(IsBetterThan(h_b, h_a, h_center));
 }
 
 } // namespace
