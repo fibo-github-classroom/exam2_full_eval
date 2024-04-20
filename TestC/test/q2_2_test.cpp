@@ -172,12 +172,12 @@ TEST(IsBetterThan, Test5) {
 
 TEST(IsBetterThan, Test6) {
   // Straight A-2-3-4-5 (lowest straight)
-  FiveCardsHand h_b{.cards = {PlayingCard{2, 5}, PlayingCard{3, 1},
+  FiveCardsHand h_a{.cards = {PlayingCard{2, 5}, PlayingCard{3, 1},
                               PlayingCard{4, 2}, PlayingCard{4, 3},
                               PlayingCard{4, 4}}};
 
   // Straight 2-3-4-5-6
-  FiveCardsHand h_a{.cards = {PlayingCard{1, 2}, PlayingCard{3, 3},
+  FiveCardsHand h_b{.cards = {PlayingCard{1, 2}, PlayingCard{3, 3},
                               PlayingCard{3, 4}, PlayingCard{3, 5},
                               PlayingCard{3, 6}}};
 
